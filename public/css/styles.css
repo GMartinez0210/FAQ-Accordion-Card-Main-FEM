@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Fredoka:wght@300;400;500&family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&family=Montserrat+Alternates:ital,wght@0,300;1,300&display=swap');
+
+/*
+### Font
+
+- Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
+- Weights: 400, 700
+*/
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    padding: 5% 15%;
+    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+}
+
+#root {
+    width: 100%;
+    height: 100%;
+}
+
+/* Main Container*/
+.main-container {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 32px;
+    box-shadow:  0px 30px 30px -10px #0000006f;
+}
+
+/* Image container that contains all the images*/
+.images-container {
+    position: relative;
+}
+
+/* The images*/
+.box-desktop {
+    width: 191px;
+    height: 184px;
+    position: absolute;
+    left: 100px;
+    top: 290px;
+    z-index: 2;
+}
+.woman-desktop {
+    width: 472px;
+    height: 359px;
+    position: absolute;
+    left: -75px;
+    bottom: 80px;
+}
+.bg-pattern-desktop {
+    width: 966px;
+    height: 945px;
+    position: absolute;
+    left: -540px;
+    bottom: -150px;
+}
+
+/* Accordeon */
+.faq {
+    font: 1.5rem;
+    color: hsl(238, 29%, 16%);
+    font-family: Kumbh Sans;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.accordeon {
+    font-size: 1rem;
+    font-family: Kumbh Sans;
+    font-weight: 400;
+    color: hsl(240, 6%, 50%);
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+}
+.arrow {
+    width: 10px;
+    height: 7px;
+}
+.title {
+    color: hsl(237, 12%, 33%);
+}  
