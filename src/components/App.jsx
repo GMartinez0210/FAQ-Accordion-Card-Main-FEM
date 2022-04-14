@@ -8,17 +8,21 @@ import items from "../Items"
 function App() {
   return (
     <div className="container main-container">
-      <img className="box-desktop" src={BoxDesktop}/>
-      <main className="row h-100 position-relative">
-        <section className="col col-lg-4 col-sm-12 images-container">
-            <img className="woman-desktop" src={WomanDesktop}/>
-            <img className="bg-pattern-desktop" src={BgPatternDesktop}/>
-        </section>
+      
+      <main className="row main-subcontainer">
+        <div className="col col-lg-6 col-sm-12 images-container">
+          <section className="images-subcontainer">
+              <img className="woman-desktop" src={WomanDesktop}/>
+              <img className="bg-pattern-desktop" src={BgPatternDesktop}/>
+          </section>
+          <img className="box-desktop" src={BoxDesktop}/>
+        </div>
+        
 
-        <section className="col col-lg-5 col-sm-12 ms-auto me-5 h-100 p-4">
+        <section className="col col-lg-5 col-sm-12  h-auto p-4 accordeon-container">
           <h1 className="faq">FAQ</h1>
           
-          <div className="">
+          <div className="accordeon-subcontainer">
             {items.map((item, index) => {
               return (<Accordeon 
                 key={index}
